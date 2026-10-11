@@ -6,6 +6,12 @@
 
 **Your coding universe.**
 
+<p>
+  <a href="https://github.com/sponsors/hoangduy0610" title="Sponsor hoangduy0610">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-db61a2?style=for-the-badge&amp;logo=githubsponsors&amp;logoColor=white" alt="Sponsor hoangduy0610" height="32" />
+  </a>
+</p>
+
 RepoAstral turns a public GitHub profile into an interactive 3D solar system. The developer is the central star, repositories become planets, stars influence their size, and programming languages seed their visual identity.
 
 No sign-in or database is required. Enter a GitHub username and explore the generated universe
