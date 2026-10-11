@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const space = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
-const title = "RepoAstral — Your code. Your universe.";
+const title = "RepoAstral — Your coding universe.";
 const description = "Turn your GitHub repositories into an interactive planetary universe.";
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
