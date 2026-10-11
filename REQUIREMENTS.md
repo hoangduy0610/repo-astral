@@ -293,16 +293,16 @@ Theme thay đổi màu background, starfield, glow và một số hiệu ứng �
 
 ### 4.1. Planet Mapping
 
-| GitHub data | Visual representation |
-|---|---|
-| Repository ID | Định danh hành tinh |
-| Repository name | Tên hành tinh |
-| Primary language | Màu sắc hành tinh |
-| Stars count | Bán kính và mức glow |
-| Repository description | Nội dung detail |
-| Repository URL | External link |
-| Last pushed date | Thông tin hoạt động gần nhất |
-| Fork count | Thống kê trong detail |
+| GitHub data            | Visual representation        |
+| ---------------------- | ---------------------------- |
+| Repository ID          | Định danh hành tinh          |
+| Repository name        | Tên hành tinh                |
+| Primary language       | Màu sắc hành tinh            |
+| Stars count            | Bán kính và mức glow         |
+| Repository description | Nội dung detail              |
+| Repository URL         | External link                |
+| Last pushed date       | Thông tin hoạt động gần nhất |
+| Fork count             | Thống kê trong detail        |
 
 Lưu ý: Khoảng cách từ hành tinh đến ngôi sao trung tâm chỉ phục vụ bố cục. Không được trình bày như một thước đo chất lượng hoặc hoạt động của repository.
 
@@ -316,13 +316,13 @@ Công thức đề xuất:
 
 Ví dụ:
 
-| Stars | Radius |
-|---|---|
-| 0 | 6 px |
-| 1 | 10 px |
-| 10 | ~19.8 px |
-| 100 | 22 px |
-| 1,000 | 22 px |
+| Stars | Radius   |
+| ----- | -------- |
+| 0     | 6 px     |
+| 1     | 10 px    |
+| 10    | ~19.8 px |
+| 100   | 22 px    |
+| 1,000 | 22 px    |
 
 Giá trị dùng cho tọa độ thiết kế, được scale khi zoom.
 
@@ -330,17 +330,17 @@ Giá trị dùng cho tọa độ thiết kế, được scale khi zoom.
 
 Bảng màu tham khảo:
 
-| Language | Hex |
-|---|---|
-| TypeScript | #3178C6 |
-| JavaScript | #F1E05A |
-| Python | #3572A5 |
-| Go | #00ADD8 |
-| Rust | #DEA584 |
-| Java | #B07219 |
-| C++ | #F34B7D |
-| PHP | #4F5D95 |
-| C# | #178600 |
+| Language        | Hex     |
+| --------------- | ------- |
+| TypeScript      | #3178C6 |
+| JavaScript      | #F1E05A |
+| Python          | #3572A5 |
+| Go              | #00ADD8 |
+| Rust            | #DEA584 |
+| Java            | #B07219 |
+| C++             | #F34B7D |
+| PHP             | #4F5D95 |
+| C#              | #178600 |
 | Other / Unknown | #8B8B97 |
 
 Các ngôn ngữ ngoài bảng được gán màu ổn định từ hash của language name.
@@ -391,16 +391,16 @@ Khi pause animation, vị trí hành tinh phải ổn định.
 
 ### 5.2. Design Tokens
 
-| Token | Value |
-|---|---|
-| Background | #070B1A |
-| Surface | #11182D |
-| Primary | #7C8CFF |
-| Accent | #66E5FF |
-| Primary Text | #F5F7FF |
-| Secondary Text | #94A3B8 |
-| Border | #26314C |
-| Border Radius | 12–16 px |
+| Token          | Value    |
+| -------------- | -------- |
+| Background     | #070B1A  |
+| Surface        | #11182D  |
+| Primary        | #7C8CFF  |
+| Accent         | #66E5FF  |
+| Primary Text   | #F5F7FF  |
+| Secondary Text | #94A3B8  |
+| Border         | #26314C  |
+| Border Radius  | 12–16 px |
 
 Typography:
 
@@ -513,18 +513,18 @@ Mobile:
 
 ### 6.1. Technology Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js App Router |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| UI Components | shadcn/ui |
-| Rendering | Canvas 2D |
-| Animation | requestAnimationFrame |
-| API | GitHub REST API |
-| Server | Next.js Route Handlers |
-| Deployment | Vercel |
-| Database | None |
+| Layer         | Technology             |
+| ------------- | ---------------------- |
+| Framework     | Next.js App Router     |
+| Language      | TypeScript             |
+| Styling       | Tailwind CSS           |
+| UI Components | shadcn/ui              |
+| Rendering     | Canvas 2D              |
+| Animation     | requestAnimationFrame  |
+| API           | GitHub REST API        |
+| Server        | Next.js Route Handlers |
+| Deployment    | Vercel                 |
+| Database      | None                   |
 
 **Rendering Decision:** Chọn Canvas 2D thay cho Three.js trong MVP để tối ưu thời gian phát triển, tương tác 2D và export PNG.
 
@@ -603,16 +603,16 @@ Không trả về GitHub token trong response.
 
 ### 6.5. Error Handling
 
-| Scenario | Expected behavior |
-|---|---|
-| Username không tồn tại | User Not Found screen |
-| Không có public repository | Empty Universe với central star |
-| GitHub API timeout | Error + Retry |
-| GitHub rate limit | Thông báo tạm thời không tải được |
-| Repository thiếu language | Sử dụng màu fallback |
-| Avatar không tải được | Placeholder |
-| Không hỗ trợ clipboard | Hiển thị URL để copy thủ công |
-| Export thất bại | Thông báo lỗi và cho phép thử lại |
+| Scenario                   | Expected behavior                 |
+| -------------------------- | --------------------------------- |
+| Username không tồn tại     | User Not Found screen             |
+| Không có public repository | Empty Universe với central star   |
+| GitHub API timeout         | Error + Retry                     |
+| GitHub rate limit          | Thông báo tạm thời không tải được |
+| Repository thiếu language  | Sử dụng màu fallback              |
+| Avatar không tải được      | Placeholder                       |
+| Không hỗ trợ clipboard     | Hiển thị URL để copy thủ công     |
+| Export thất bại            | Thông báo lỗi và cho phép thử lại |
 
 ### 6.6. Caching
 
@@ -708,14 +708,14 @@ Không dùng ảnh avatar trong export nếu ảnh đó không hỗ trợ tải 
 
 ## 9. Development Plan
 
-| Phase | Task | Estimate |
-|---|---|---|
-| 1 | Project setup, design tokens, landing page | 1h |
-| 2 | GitHub API proxy, data models, normalization | 1h |
-| 3 | Canvas renderer, planets, orbits, animation | 2h |
-| 4 | Interactions, detail panel, responsive controls | 1h |
-| 5 | PNG export và share URL | 1h |
-| 6 | QA, optimization và Vercel deployment | 1–2h |
+| Phase | Task                                            | Estimate |
+| ----- | ----------------------------------------------- | -------- |
+| 1     | Project setup, design tokens, landing page      | 1h       |
+| 2     | GitHub API proxy, data models, normalization    | 1h       |
+| 3     | Canvas renderer, planets, orbits, animation     | 2h       |
+| 4     | Interactions, detail panel, responsive controls | 1h       |
+| 5     | PNG export và share URL                         | 1h       |
+| 6     | QA, optimization và Vercel deployment           | 1–2h     |
 
 **Tổng:** 7–8 giờ. Đây là mục tiêu triển khai, không phải cam kết; phần Canvas và export có rủi ro vượt ước lượng cao nhất.
 

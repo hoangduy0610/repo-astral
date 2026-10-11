@@ -2,13 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
-* { box-sizing: border-box; }
-html, body { min-height: 100%; }
-body { margin: 0; background: #070b1a; color: #f5f7ff; font-family: var(--font-inter), sans-serif; }
-button, input { font: inherit; }
-.glass { background: rgba(17, 24, 45, .72); border: 1px solid rgba(117, 139, 190, .18); box-shadow: 0 20px 80px rgba(0,0,0,.28); backdrop-filter: blur(18px); }
-.starfield { background: radial-gradient(circle at 50% 20%, rgba(83, 80, 180, .2), transparent 35%), radial-gradient(circle at 80% 80%, rgba(40, 128, 172, .12), transparent 32%), #070b1a; }
-@keyframes drift { from { transform: translate3d(0,0,0) scale(1); } to { transform: translate3d(-1.5%, 1%, 0) scale(1.04); } }
-.drift { animation: drift 18s ease-in-out infinite alternate; }
-main > div[class*="pointer-events-none"] { display: none; }
+:root {
+  color-scheme: dark;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  background: #070b1a;
+  color: #f5f7ff;
+  font-family: var(--font-inter), sans-serif;
+}
+button,
+input {
+  font: inherit;
+}
+.glass {
+  background: rgba(17, 24, 45, 0.72);
+  border: 1px solid rgba(117, 139, 190, 0.18);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+.starfield {
+  background:
+    radial-gradient(circle at 50% 20%, rgba(83, 80, 180, 0.2), transparent 35%),
+    radial-gradient(circle at 80% 80%, rgba(40, 128, 172, 0.12), transparent 32%), #070b1a;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+main > div[class*="pointer-events-none"] {
+  display: none;
+}
